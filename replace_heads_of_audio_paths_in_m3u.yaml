@@ -1,0 +1,24 @@
+### replace_heads_of_audio_paths_in_m3u.pyの設定ファイル ###
+# 全て指定必須のフィールドです。（※）を付与したフィールドは、その値がパスとして、Pythonスクリプトを実行するPC上に実在する必要があります。
+
+# 入力するM3Uファイル群を格納しているフォルダの絶対パス（※）
+DIR_PATH_FOR_INPUT_M3U_FILES: /original/path/m3u_folder
+
+# 出力されるM3Uファイル群を格納するフォルダの絶対パス（※）
+# > "DIR_PATH_FOR_INPUT_M3U_FILES"に指定したフォルダ配下の、M3Uファイルを格納しているフォルダまでの構造が再現されます。
+# > 出力しようとするM3Uファイルのパスが既に存在する場合はエラーとなるため、空フォルダを指定することを推奨します。
+DIR_PATH_FOR_OUTPUT_M3U_FILES: /new/path/converted_m3u_folder
+
+# 入力するM3Uファイルに記載されている、音楽ファイルの親フォルダの絶対パスのリスト
+# > 複数パターンがある場合は複数指定します。
+BASE_PATHS_BEFORE_REPLACE:
+  - /Users/USERNAME/Music/iTunes/iTunes Media
+
+# 出力されるM3Uファイルに記載する、音楽ファイルの親フォルダの絶対パスのリスト（※）
+# > "BASE_PATHS_BEFORE_REPLACE"に指定したフォルダパスのすべてについて、このフォルダパスで置換できるかどうか試行します。
+# > 複数指定した場合、親フォルダを置換された音楽ファイルのファイルパスうち、Pythonスクリプトを実行するPC上に実在するもののみが採用されます。
+# > 1つの音楽ファイルに対して、実在するファイルパスが特定できない、または複数存在する場合は、その音楽ファイルを含むM3Uファイルの変換はエラーになります。
+BASE_PATHS_AFTER_REPLACE:
+  - /new/path/share_music
+  - /new/path/user1/music
+  - /new/path/user2/music
