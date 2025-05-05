@@ -9,7 +9,7 @@
 ### 1. Pythonのインストール
 
 音楽ファイルの移行先のPC上に、Pythonをインストールします。  
-当リポジトリのスクリプトが動作確認されている未満のバージョンだと、不具合が生じる可能性があります。  
+本リポジトリのスクリプトが動作確認されている未満のバージョンだと、不具合が生じる可能性があります。  
 ※作者が動作確認をした環境は、[.python-version](./.python-version)ファイルを参照。
 
 （参考）  
@@ -18,15 +18,15 @@
 
 ### 2. スクリプトファイルと設定ファイルの格納
 
-音楽ファイルの移行先のPC上で、適切な作業フォルダに、当リポジトリのスクリプトファイルと設定ファイル、および`requirements.txt`ファイルをダウンロードして格納します。
+音楽ファイルの移行先のPC上で、適切な作業フォルダに、本リポジトリのスクリプトファイルと設定ファイル、および`requirements.txt`ファイルをダウンロードして格納します。
 * スクリプトファイル: [replace_heads_of_audio_paths_in_m3u.py](./replace_heads_of_audio_paths_in_m3u.py)
 * 設定ファイル: [replace_heads_of_audio_paths_in_m3u.yaml](./replace_heads_of_audio_paths_in_m3u.yaml)
 * `requirements.txt`ファイル: [requirements.txt](./requirements.txt)
 
 ### 3. 必要パッケージのインストール
 
-当リポジトリのスクリプトの実行に必要なPythonパッケージをインストールします。  
-当リポジトリのスクリプトが動作確認されている未満のバージョンだと、不具合が生じる可能性があります。
+本リポジトリのスクリプトの実行に必要なPythonパッケージをインストールします。  
+本リポジトリのスクリプトが動作確認されている未満のバージョンだと、不具合が生じる可能性があります。
 
 ```bash
 pip install -r ./requirements.txt
