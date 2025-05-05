@@ -19,9 +19,9 @@
 ### 2. スクリプトファイルと設定ファイルの格納
 
 音楽ファイルの移行先のPC上で、適切な作業フォルダに、当レポジトリのスクリプトファイルと設定ファイル、および`requirements.txt`ファイルをダウンロードして格納します。
-* スクリプトファイル: replace_heads_of_audio_paths_in_m3u.py
-* 設定ファイル: replace_heads_of_audio_paths_in_m3u.yaml
-* `requirements.txt`ファイル: requirements.txt
+* スクリプトファイル: [replace_heads_of_audio_paths_in_m3u.py](./replace_heads_of_audio_paths_in_m3u.py)
+* 設定ファイル: [replace_heads_of_audio_paths_in_m3u.yaml](./replace_heads_of_audio_paths_in_m3u.yaml)
+* `requirements.txt`ファイル: [requirements.txt](./requirements.txt)
 
 ### 3. 必要パッケージのインストール
 
