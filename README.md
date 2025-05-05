@@ -13,7 +13,7 @@
 ※作者が動作確認をした環境は、[.python-version](./.python-version)ファイルを参照。
 
 （参考）  
-[WindowsにシンプルなPython開発環境を構築する。 | U-MAN Lab.](https://u-man-lab.com/simple-python-dev-environment-on-windows/)
+[WindowsにシンプルなPython開発環境を構築する。 | U-MAN Lab.](https://u-man-lab.com/simple-python-dev-environment-on-windows/?utm_source=github&utm_medium=social&utm_campaign=replace_heads_of_audio_paths_in_m3u)
 
 
 ### 2. スクリプトファイルと設定ファイルの格納
@@ -98,4 +98,4 @@ FileNotFoundError: M3Uファイル内の楽曲ファイルパス"/Users/USERNAME
 
 ## 👤 作者
 
-U-MAN Lab. (https://u-man-lab.com/)
+U-MAN Lab. ([https://u-man-lab.com/](https://u-man-lab.com?utm_source=github&utm_medium=social&utm_campaign=replace_heads_of_audio_paths_in_m3u))
