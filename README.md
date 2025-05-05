@@ -84,7 +84,7 @@ M3U ファイル内の楽曲ファイルパスが変換後に実在しない場�
 ---
 処理中 [2/178] <- "/original/path/m3u_folder/JUDY AND MARY.m3u"
 FileNotFoundError: M3Uファイル内の楽曲ファイルパス"/Users/USERNAME/Music/iTunes/iTunes Media/Music/JUDY AND MARY/The Great Escape -COMPLETE BEST-/1-04 mottö.m4a"の現在の場所を確認できません。
-処理失敗(変換) [1/178] FileNotFoundError: 1つ以上の楽曲ファイルの特定ができなかったため、M3Uファイルの置換に失敗しました。: "/original/path/m3u_folder/JUDY AND MARY.m3u"
+処理失敗(変換) [2/178] FileNotFoundError: 1つ以上の楽曲ファイルの特定ができなかったため、M3Uファイルの置換に失敗しました。: "/original/path/m3u_folder/JUDY AND MARY.m3u"
 ...
 ```
 
