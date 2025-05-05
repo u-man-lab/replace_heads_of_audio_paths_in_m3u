@@ -1,0 +1,2 @@
+# replace_heads_of_audio_paths_in_m3u
+本レポジトリは、iTunesなどから出力したM3Uプレイリストファイルに記載された音楽ファイルのパスを、移行先のNASなどのPC上の実在するパスに置換するPythonスクリプトを提供します。
