@@ -1,14 +1,20 @@
 # replace_heads_of_audio_paths_in_m3u
 
-本リポジトリは、iTunesなどから出力したM3Uプレイリストファイルに対して、記載された音楽ファイルのパスを、移行先のNASなどのPC上の実在するパスに置換するPythonスクリプトを提供します。
+本リポジトリは、iTunesなどから出力したM3Uプレイリストファイルに対して、記載された楽曲ファイルのパスを、移行先のNASなどのPC上の実在するパスに置換するPythonスクリプトを提供します。
 
----
+![./images/004169_Pythonスクリプトの機能.png](./images/004169_Pythonスクリプトの機能.png)
+
+
+## 🚩本スクリプトについて
+* 本スクリプトは、以下の記事中の作業を実施するために実装しました。  
+[iTunesの全楽曲＆プレイリストをNASに移行しました。 | U-MAN Lab.](https://u-man-lab.com/songs_and_playlists_migration_from_itunes_to_nas/?utm_source=github&utm_medium=social&utm_campaign=replace_heads_of_audio_paths_in_m3u)
+* 本スクリプトの動作確認は、絶対パスへの置換でのみ検証しています。相対パスへの置換が想定通りに動くかどうかは未検証です。なお、本スクリプトを使って絶対パスに置換したあと、相対パスに修正する方法は、上記の記事を参考にしてください。
 
 ## 🚀 実行方法
 
 ### 1. Pythonのインストール
 
-音楽ファイルの移行先のPC上に、Pythonをインストールします。  
+楽曲ファイルの移行先のPC上に、Pythonをインストールします。  
 本リポジトリのスクリプトが動作確認されている未満のバージョンだと、不具合が生じる可能性があります。  
 ※作者が動作確認をした環境は、[.python-version](./.python-version)ファイルを参照。
 
@@ -18,7 +24,7 @@
 
 ### 2. スクリプトファイルと設定ファイルの格納
 
-音楽ファイルの移行先のPC上で、適切な作業フォルダに、本リポジトリのスクリプトファイルと設定ファイル、および`requirements.txt`ファイルをダウンロードして格納します。
+楽曲ファイルの移行先のPC上で、適切な作業フォルダに、本リポジトリのスクリプトファイルと設定ファイル、および`requirements.txt`ファイルをダウンロードして格納します。
 * スクリプトファイル: [replace_heads_of_audio_paths_in_m3u.py](./replace_heads_of_audio_paths_in_m3u.py)
 * 設定ファイル: [replace_heads_of_audio_paths_in_m3u.yaml](./replace_heads_of_audio_paths_in_m3u.yaml)
 * `requirements.txt`ファイル: [requirements.txt](./requirements.txt)
@@ -44,13 +50,12 @@ pip install -r ./requirements.txt
 python ./replace_heads_of_audio_paths_in_m3u.py ./replace_heads_of_audio_paths_in_m3u.yaml
 ```
 
----
 
 ## ✅ 正常な動作結果の例
 
 - 指定された入力フォルダ配下のM3Uファイル（拡張子`.m3u`または`.m3u8`）が再帰的に探索されます。
 - 指定された出力フォルダに、変換後のM3Uファイルが元のフォルダ構造を維持したまま作成されます。
-- 各M3Uファイル内の音楽ファイルのパスは、移行先のPC上に実在するファイルパスに置換されます。
+- 各M3Uファイル内の楽曲ファイルのパスは、移行先のPC上に実在するファイルパスに置換されます。
 - 正常に動作した場合の出力例は以下です。
   ```bash
   ---
@@ -62,7 +67,6 @@ python ./replace_heads_of_audio_paths_in_m3u.py ./replace_heads_of_audio_paths_i
   ...
   ```
 
----
 
 ## ⚠️ 主なエラー・例外
 
@@ -88,13 +92,11 @@ FileNotFoundError: M3Uファイル内の楽曲ファイルパス"/Users/USERNAME
 ...
 ```
 
----
 
 ## 📄 ライセンス
 
 このリポジトリはMITライセンスの下で提供されています。詳細は[LICENSE](./LICENSE)ファイルを参照してください。
 
----
 
 ## 👤 作者
 
